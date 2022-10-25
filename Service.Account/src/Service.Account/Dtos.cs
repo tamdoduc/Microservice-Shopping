@@ -3,13 +3,13 @@ using System;
 namespace Service.Account.Dtos
 {
     public record AccountDto(
-        Guid id,
-        string userName,
-        string password,
-        string fullName,
-        string email,
-        int phoneNumber,
-        string imageUrl,
-        string sex
+        Guid Id,
+        string UserName,
+        string Password,
+        string FullName,
+        string Email,
+        int PhoneNumber,
+        string ImageUrl,
+        string Sex
     );
 }
