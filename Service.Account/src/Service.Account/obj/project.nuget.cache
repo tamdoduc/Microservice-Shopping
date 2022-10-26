@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uC1hjYANrpfp8gb297/uRdZwYriSSPZxDM861QcpSO+ZfNV6aHWAaPPFVY8MTw81iSqhnSWAQ7gYfQkJpofLXQ==",
+  "dgSpecHash": "IgSCK7Dq6nksPrJOZ/Y1I1sCdZq5DWNPwXSViXe+dtqN7n6pHnNZXA2zwFKOEdmgRULEUi0OkzP65l4SJG+6AA==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Service.Account\\src\\service.account\\Service.Account.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Service.Account\\src\\Service.Account\\Service.Account.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TurtleTea\\.nuget\\packages\\base.service\\1.0.0\\base.service.1.0.0.nupkg.sha512",
     "C:\\Users\\TurtleTea\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
