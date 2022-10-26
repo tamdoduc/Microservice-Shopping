@@ -12,4 +12,23 @@ namespace Service.Account.Dtos
         string ImageUrl,
         string Sex
     );
+
+    public record CreateAccountDto(
+        string UserName,
+        string Password,
+        string FullName,
+        string Email,
+        int PhoneNumber,
+        string Sex
+    );
+
+    public record UpdateAccountDto(
+        string UserName,
+        string Password,
+        string FullName,
+        string Email,
+        int PhoneNumber,
+        string ImageUrl,
+        string Sex
+    );
 }
