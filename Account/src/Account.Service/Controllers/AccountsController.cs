@@ -1,11 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using Service.Account.Entities;
-using Service.Account;
-using Base.Service;
+using Account.Service.Entities;
+using Account.Service;
 using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
-using Service.Account.Dtos;
+using Account.Service.Dtos;
 using System.Linq;
 
 namespace Base.Service.Controllers

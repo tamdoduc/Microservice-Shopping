@@ -1,7 +1,7 @@
 using System;
 using Base.Service;
 
-namespace Service.Account.Entities
+namespace Account.Service.Entities
 {
     public class AccountDao : IEntity
     {

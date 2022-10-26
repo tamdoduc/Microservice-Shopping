@@ -1,11 +1,11 @@
-using Service.Account.Dtos;
-using Service.Account.Entities;
+using Account.Service.Dtos;
+using Account.Service.Entities;
 
-namespace Service.Account
+namespace Account.Service
 {
     public static class Extensions
     {
-        public static AccountDto AsDto(this Service.Account.Entities.AccountDao account)
+        public static AccountDto AsDto(this AccountDao account)
         {
             return new AccountDto(
                 account.Id,

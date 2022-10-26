@@ -1,6 +1,6 @@
 using System;
 
-namespace Service.Account.Dtos
+namespace Account.Service.Dtos
 {
     public record AccountDto(
         Guid Id,
