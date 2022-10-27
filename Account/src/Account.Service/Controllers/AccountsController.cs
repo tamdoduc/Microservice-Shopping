@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using Account.Service.Dtos;
 using System.Linq;
+using MassTransit;
+using Account.Contracts;
 
 namespace Base.Service.Controllers
 {
@@ -14,10 +16,15 @@ namespace Base.Service.Controllers
     public class AccountsController : ControllerBase
     {
         private readonly IRepository<AccountDao> accountsRepository;
+        private readonly IPublishEndpoint publishEndpoint;
 
-        public AccountsController(IRepository<AccountDao> accountsRepository)
+        public AccountsController(
+            IRepository<AccountDao> accountsRepository,
+            IPublishEndpoint publishEndpoint
+        )
         {
             this.accountsRepository = accountsRepository;
+            this.publishEndpoint = publishEndpoint;
         }
 
         //GET /accounts/
@@ -59,6 +66,20 @@ namespace Base.Service.Controllers
                 Sex = createItemDto.Sex
             };
             await accountsRepository.CreateAsync(account);
+
+            await publishEndpoint.Publish(
+                new AccountCreated(
+                    account.Id,
+                    account.UserName,
+                    account.Password,
+                    account.FullName,
+                    account.Email,
+                    account.PhoneNumber,
+                    account.ImageUrl,
+                    account.Sex
+                )
+            );
+
             return CreatedAtAction(nameof(GetAsyncById), new { id = account.Id }, account);
         }
 
@@ -83,6 +104,19 @@ namespace Base.Service.Controllers
 
             await accountsRepository.UpdateAsync(existingAccount);
 
+            await publishEndpoint.Publish(
+                new AccountUpdated(
+                    existingAccount.Id,
+                    existingAccount.UserName,
+                    existingAccount.Password,
+                    existingAccount.FullName,
+                    existingAccount.Email,
+                    existingAccount.PhoneNumber,
+                    existingAccount.ImageUrl,
+                    existingAccount.Sex
+                )
+            );
+
             return NoContent();
         }
 
@@ -90,13 +124,16 @@ namespace Base.Service.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
-            var item = await accountsRepository.GetAsync(id);
-            if (item == null)
+            var account = await accountsRepository.GetAsync(id);
+            if (account == null)
             {
                 return NotFound();
             }
 
-            await accountsRepository.RemoveAsync(item.Id);
+            await accountsRepository.RemoveAsync(account.Id);
+
+            await publishEndpoint.Publish(new AccountDeleted(account.Id));
+
             return NoContent();
         }
     }
