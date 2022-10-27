@@ -1,4 +1,4 @@
-namespace Account.Service.Settings
+namespace Base.Service.Settings
 {
     public class RabbitMQSettings
     {

@@ -6,9 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Account.Service.Entities;
-using MassTransit;
-using Account.Service.Settings;
 using Base.Service.Settings;
+using Base.Service.MassTransit;
 
 namespace Service.Account
 {
@@ -29,26 +28,10 @@ namespace Service.Account
                 .GetSection(nameof(ServiceSettings))
                 .Get<ServiceSettings>();
 
-            services.AddMongo().AddMongoRespository<AccountDao>("accounts");
-
-            services.AddMassTransit(x =>
-            {
-                x.UsingRabbitMq(
-                    (context, configurator) =>
-                    {
-                        var rabbitMQSettings = Configuration
-                            .GetSection(nameof(RabbitMQSettings))
-                            .Get<RabbitMQSettings>();
-                        configurator.Host(rabbitMQSettings.Host);
-                        configurator.ConfigureEndpoints(
-                            context,
-                            new KebabCaseEndpointNameFormatter(serviceSettings.ServiceName, false)
-                        );
-                    }
-                );
-            });
-
-            //services.AddMassTransitHostedService();
+            services
+                .AddMongo()
+                .AddMongoRespository<AccountDao>("accounts")
+                .AddMassTransitWithRabbitMq();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

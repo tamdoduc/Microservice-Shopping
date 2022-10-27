@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base.Service\\src\\Base.service\\Base.Service.csproj": {}
+    "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base\\src\\Base.Service\\Base.Service.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base.Service\\src\\Base.service\\Base.Service.csproj": {
-      "version": "1.0.0",
+    "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base\\src\\Base.Service\\Base.Service.csproj": {
+      "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base.Service\\src\\Base.service\\Base.Service.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base\\src\\Base.Service\\Base.Service.csproj",
         "projectName": "Base.Service",
-        "projectPath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base.Service\\src\\Base.service\\Base.Service.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base\\src\\Base.Service\\Base.Service.csproj",
         "packagesPath": "C:\\Users\\TurtleTea\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base.Service\\src\\Base.service\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Base\\src\\Base.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TurtleTea\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,6 +42,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMq": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
