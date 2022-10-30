@@ -7,7 +7,7 @@
 ### Architecture : Microservice
 
 ## Command
-### New service : dotnet new webapi -n Service.[:name] --framework net5.0
+### New service : dotnet new webapi -n [:name].Service --framework net5.0
 ### Add package : dotnet add package [:name] --version 
 ### Create package : dotnet pack [to-source]
 ### Add Nuget : dotnet nuget add source [source] -n [:name]
