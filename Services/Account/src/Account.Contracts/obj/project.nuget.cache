@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oL28tSMGzWddP3p4BtD5qyeKdsT6I8G5+e9dZMWal+UjXL5pNtGYMmLFlzShPwejB2iiws8x3fNXQDISeixuLQ==",
+  "dgSpecHash": "l07zqLdWcM7DPGT1dtbZbI4J9pfdewjkSk52huL7kqLQ6qB6Tpt2nSK1OhvdChTuSVaKlri5csfd52Yxrr3kqw==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
+  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

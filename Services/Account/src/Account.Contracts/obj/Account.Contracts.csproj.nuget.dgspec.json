@@ -1,29 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Account\\src\\Account.Contracts\\Account.Contracts.csproj": {}
+    "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Account\\src\\Account.Contracts\\Account.Contracts.csproj": {
+    "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
+        "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
         "projectName": "Account.Contracts",
-        "projectPath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
-        "packagesPath": "C:\\Users\\TurtleTea\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\Account\\src\\Account.Contracts\\obj\\",
+        "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
+        "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TurtleTea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\xampp\\htdocs\\Clone\\Microservice-Shopping\\packages": {},
-          "D:\\Microservices\\packages": {},
+          "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,7 +44,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -56,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
