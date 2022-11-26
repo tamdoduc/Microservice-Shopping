@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\Product.Service.csproj": {}
+    "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj": {}
   },
   "projects": {
-    "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\Product.Service.csproj": {
+    "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\Product.Service.csproj",
+        "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
         "projectName": "Product.Service",
-        "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\Product.Service.csproj",
+        "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
         "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-        "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\obj\\",
+        "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
