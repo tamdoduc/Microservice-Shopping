@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Product.Service.Dtos;
 using System;
 using System.Linq;
+using MassTransit;
 
 namespace Product.Service.Controllers
 {
@@ -14,10 +15,12 @@ namespace Product.Service.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IRepository<ProductDao> productsRepository;
+         private readonly IPublishEndpoint publishEndpoint;
 
-        public ProductController(IRepository<ProductDao> productsRepository)
+        public ProductController(IRepository<ProductDao> productsRepository,IPublishEndpoint publishEndpoint)
         {
             this.productsRepository = productsRepository;
+            this.publishEndpoint = publishEndpoint;
         }
 
          //GET /products/{idAccount}

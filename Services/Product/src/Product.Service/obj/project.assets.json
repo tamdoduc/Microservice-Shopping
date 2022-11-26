@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Base.Service/1.0.2": {
+      "Base.Service/2.1.0": {
         "type": "package",
         "dependencies": {
           "MassTransit.AspNetCore": "7.3.1",
@@ -763,13 +763,13 @@
     }
   },
   "libraries": {
-    "Base.Service/1.0.2": {
-      "sha512": "3Zbm0eLBALaDtyKzBNpYuC+LHoHXVzVQU7fpHQmh8tnSkCpd665RiMs1SYk7Pe/448RXmOlOli6VSfgfMq3v/Q==",
+    "Base.Service/2.1.0": {
+      "sha512": "ONpesKBzyn3yONYYtsz5pj9yc20077w2T1SStWmPdK4qearpIe/iG1an3LwSCvjwNwWqEoRc5W9sT3pwoeREkg==",
       "type": "package",
-      "path": "base.service/1.0.2",
+      "path": "base.service/2.1.0",
       "files": [
         ".nupkg.metadata",
-        "base.service.1.0.2.nupkg.sha512",
+        "base.service.2.1.0.nupkg.sha512",
         "base.service.nuspec",
         "lib/net5.0/Base.Service.dll"
       ]
@@ -1868,7 +1868,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Base.Service >= 1.0.2",
+      "Base.Service >= 2.1.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1878,11 +1878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\Product.Service.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
       "projectName": "Product.Service",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\Product.Service.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\product.service\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1912,7 +1912,7 @@
         "dependencies": {
           "Base.Service": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[2.1.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
