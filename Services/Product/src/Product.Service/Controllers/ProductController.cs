@@ -42,12 +42,12 @@ namespace Product.Service.Controllers
             {
                 IdAccount = productDto.IdAccount,
                 NameProduct = productDto.NameProduct,
-                Price = productDto.Price,
+                Image = productDto.Image,
+                MinPrice = productDto.MinPrice,
+                MaxPrice = productDto.MaxPrice,
                 CountSold = productDto.CountSold,
                 CountStar = productDto.CountStar,
-                CountAvailable = productDto.CountAvailable,
-                Description = productDto.Description,
-                Type = productDto.Type
+                Discount = productDto.Discount
             };
             await productsRepository.CreateAsync(product);
 
@@ -63,14 +63,14 @@ namespace Product.Service.Controllers
             {
                 return NotFound();
             }
+            existingProduct.IdAccount = productDto.IdAccount;
             existingProduct.NameProduct = productDto.NameProduct;
-            existingProduct.Price = productDto.Price;
+            existingProduct.Image = productDto.Image;
+            existingProduct.MinPrice = productDto.MinPrice;
+            existingProduct.MaxPrice = productDto.MaxPrice;
             existingProduct.CountSold = productDto.CountSold;
-            existingProduct.CountAvailable = productDto.CountAvailable;
             existingProduct.CountStar = productDto.CountStar;
-            existingProduct.Description = productDto.Description;
-            existingProduct.Type = productDto.Type;
-
+            existingProduct.Discount = productDto.Discount;
             await productsRepository.UpdateAsync(existingProduct);
 
             return NoContent();
