@@ -23,16 +23,40 @@ namespace Product.Service.Controllers
             this.publishEndpoint = publishEndpoint;
         }
 
-         //GET /products/{idAccount}
-        [HttpGet("{idAccount}")]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAsyncById(Guid idAccount)
+         //GET /products/byAccount/{idAccount}
+        [HttpGet("byAccount/{idAccount}")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAllAsyncByIdAccount(Guid idAccount)
         {
             if (idAccount == Guid.Empty)
+            {
+                return BadRequest("123");
+            }
+            var products = (
+                await productsRepository.GetAllAsync(product => product.IdAccount == idAccount)
+            ).Select(product => product.AsDto());
+
+            return Ok(products);
+        }
+        //GET /products
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAllAsync()
+        {
+            var products = (
+                await productsRepository.GetAllAsync()
+            ).Select(product => product.AsDto());
+
+            return Ok(products);
+        }
+         //GET /products/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAsyncById(Guid id)
+        {
+            if (id == Guid.Empty)
             {
                 return BadRequest();
             }
             var products = (
-                await productsRepository.GetAllAsync(product => product.IdAccount == idAccount)
+                await productsRepository.GetAllAsync(product => product.Id == id)
             ).Select(product => product.AsDto());
 
             return Ok(products);
@@ -82,13 +106,13 @@ namespace Product.Service.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
-            var account = await productsRepository.GetAsync(id);
-            if (account == null)
+            var product = await productsRepository.GetAsync(id);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            await productsRepository.RemoveAsync(account.Id);
+            await productsRepository.RemoveAsync(product.Id);
 
             return NoContent();
         }
