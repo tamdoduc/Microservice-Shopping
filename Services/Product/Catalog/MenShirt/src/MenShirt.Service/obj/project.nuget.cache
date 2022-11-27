@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NAjeZhiNPeGwKZ1U/FTTvFasBvME6FfC21le9qECyqxfFZlJvZnCbv83K/GEoJPm+E8FUj9/C840e5/19aQ94A==",
+  "dgSpecHash": "jOPA06cr9JM3UiZbUs5fDRAJ74+5UuQZXaDFLqB1uGQGQiSeOO7BghWr425OkrKGLUkuceRMhNgVGoSbCkQEZw==",
   "success": true,
-  "projectFilePath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
+  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Turtle\\.nuget\\packages\\base.service\\2.1.0\\base.service.2.1.0.nupkg.sha512",
     "C:\\Users\\Turtle\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

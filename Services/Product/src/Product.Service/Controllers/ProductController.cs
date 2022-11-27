@@ -12,7 +12,7 @@ namespace Product.Service.Controllers
 {
     [ApiController]
     [Route("products")]
-    public class ProductController : ControllerBase
+        public class ProductController : ControllerBase
     {
         protected readonly IRepository<ProductDao> productsRepository;
         protected readonly IPublishEndpoint publishEndpoint;
