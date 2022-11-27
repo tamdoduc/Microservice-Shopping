@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj": {}
+    "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj": {}
   },
   "projects": {
-    "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj": {
+    "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
-        "projectName": "Product.Service",
-        "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+        "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
+        "projectName": "MenShirt.Service",
+        "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
         "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-        "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
+        "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,7 +43,11 @@
           "dependencies": {
             "Base.Service": {
               "target": "Package",
-              "version": "[2.1.0, )"
+              "version": "[2.0.1, )"
+            },
+            "Product.Service": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

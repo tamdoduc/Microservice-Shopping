@@ -1,5 +1,5 @@
 {
-  "FilePath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+  "FilePath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "Product.Service",
+  "RootNamespace": "MenShirt.Service",
   "Documents": [],
   "SerializationFormat": "0.2"
 }

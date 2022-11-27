@@ -474,6 +474,38 @@
           }
         }
       },
+      "Product.Service/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Base.Service": "2.1.0",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "compile": {
+          "lib/net5.0/Product.Service.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Product.Service.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "contentFiles": {
+          "contentFiles/any/net5.0/appsettings.Development.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/appsettings.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "RabbitMQ.Client/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -1307,6 +1339,22 @@
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
+    "Product.Service/1.0.2": {
+      "sha512": "M86xc+Y0liGoj7RBUtb04Vd4OuqJ09xbYaht0zl48Y6UokmTxug3NJpx4aGCvgib7khXotEu6w/OGZHLunhklw==",
+      "type": "package",
+      "path": "product.service/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "content/appsettings.Development.json",
+        "content/appsettings.json",
+        "contentFiles/any/net5.0/appsettings.Development.json",
+        "contentFiles/any/net5.0/appsettings.json",
+        "lib/net5.0/Product.Service.dll",
+        "lib/net5.0/Product.Service.runtimeconfig.json",
+        "product.service.1.0.2.nupkg.sha512",
+        "product.service.nuspec"
+      ]
+    },
     "RabbitMQ.Client/6.4.0": {
       "sha512": "1znR1gGU+xYVSpO5z8nQolcUKA/yydnxQn7Ug9+RUXxTSLMm/eE58VKGwahPBjELXvDnX0k/kBrAitFLRjx9LA==",
       "type": "package",
@@ -1868,7 +1916,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Base.Service >= 2.1.0",
+      "Base.Service >= 2.0.1",
+      "Product.Service >= 1.0.2",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1878,11 +1927,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
-      "projectName": "Product.Service",
-      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
+      "projectName": "MenShirt.Service",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1914,7 +1963,11 @@
         "dependencies": {
           "Base.Service": {
             "target": "Package",
-            "version": "[2.1.0, )"
+            "version": "[2.0.1, )"
+          },
+          "Product.Service": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -1943,5 +1996,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MenShirt.Service depends on Base.Service (>= 2.0.1) but Base.Service 2.0.1 was not found. An approximate best match of Base.Service 2.1.0 was resolved.",
+      "libraryId": "Base.Service",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

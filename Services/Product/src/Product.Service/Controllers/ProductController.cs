@@ -14,8 +14,8 @@ namespace Product.Service.Controllers
     [Route("products")]
     public class ProductController : ControllerBase
     {
-        private readonly IRepository<ProductDao> productsRepository;
-         private readonly IPublishEndpoint publishEndpoint;
+        protected readonly IRepository<ProductDao> productsRepository;
+        protected readonly IPublishEndpoint publishEndpoint;
 
         public ProductController(IRepository<ProductDao> productsRepository,IPublishEndpoint publishEndpoint)
         {
