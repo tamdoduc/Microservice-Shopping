@@ -7,6 +7,7 @@ using Product.Service.Dtos;
 using System;
 using System.Linq;
 using MassTransit;
+using Product.Contracts;
 
 namespace Product.Service.Controllers
 {
@@ -117,6 +118,8 @@ namespace Product.Service.Controllers
             }
 
             await productsRepository.RemoveAsync(product.Id);
+
+            await publishEndpoint.Publish(new ProductDeleted(product.Id));
 
             return NoContent();
         }

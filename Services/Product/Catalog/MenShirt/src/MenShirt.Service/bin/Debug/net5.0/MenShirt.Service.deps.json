@@ -34,6 +34,7 @@
       "MenShirt.Service/1.0.0": {
         "dependencies": {
           "Base.Service": "2.1.0",
+          "MenShirt.Contracts": "1.0.0",
           "Product.Service": "1.0.2",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -825,6 +826,14 @@
         },
         "compile": {
           "lib/net5.0/ZstdSharp.dll": {}
+        }
+      },
+      "MenShirt.Contracts/1.0.0": {
+        "runtime": {
+          "MenShirt.Contracts.dll": {}
+        },
+        "compile": {
+          "MenShirt.Contracts.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2795,6 +2804,11 @@
       "sha512": "sha512-jPao/LdUNLUz8rn3H1D8W7wQbZsRZM0iayvWI4xGejJg3XJHT56gcmYdgmCGPdJF1UEBqUjucCRrFB+4HbJsbw==",
       "path": "zstdsharp.port/0.6.2",
       "hashPath": "zstdsharp.port.0.6.2.nupkg.sha512"
+    },
+    "MenShirt.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

@@ -8,6 +8,7 @@ using Product.Catalog.MenShirt.Service.Dtos;
 using System.Linq;
 using Product.Catalog.MenShirt.Service.Extensions;
 using System.Collections.Generic;
+using Product.Catalog.MenShirt.Contracts;
 
 namespace Product.Catalog.MenShirt.Service.Controllers
 {
@@ -71,11 +72,13 @@ namespace Product.Catalog.MenShirt.Service.Controllers
                 Image = MenShirtDto.Image,
                 MinPrice = MenShirtDto.MinPrice,
                 MaxPrice = MenShirtDto.MaxPrice,
-                CountSold = MenShirtDto.CountSold,
-                CountStar = MenShirtDto.CountStar,
+                CountSold =0,
+                CountStar = 5,
                 Discount = MenShirtDto.Discount
             };
             await productsRepository.CreateAsync(product);
+
+            await publishEndpoint.Publish(new MenShirtCreated(product.Id, product.IdAccount, product.NameProduct, product.Image, product.MinPrice, product.MaxPrice, product.Discount));
 
             return CreatedAtAction(nameof(GetAsyncById), new { id = product.Id }, product);
         }
@@ -99,6 +102,8 @@ namespace Product.Catalog.MenShirt.Service.Controllers
             existingProduct.Discount = MenShirtDto.Discount;
             await productsRepository.UpdateAsync(existingProduct);
 
+            await publishEndpoint.Publish(new MenShirtUpdated(existingProduct.Id, existingProduct.IdAccount, existingProduct.NameProduct, existingProduct.Image, existingProduct.MinPrice, existingProduct.MaxPrice,existingProduct.CountSold,existingProduct.CountStar, existingProduct.Discount));
+
             return NoContent();
         }
         //DELETE /product/catalog/menshirts/{id}
@@ -112,6 +117,25 @@ namespace Product.Catalog.MenShirt.Service.Controllers
             }
 
             await productsRepository.RemoveAsync(product.Id);
+
+            await publishEndpoint.Publish(new MenShirtDeleted(product.Id));
+
+            return NoContent();
+        }
+        //POST /product/catalog/menshirts/{id}
+        [HttpPost("increaseCountSold/{id}")]
+        public async Task<IActionResult> IncreaseCountSoldAsync(Guid id, IncreaseCountSold increaseCountSold)
+        {
+            var existingProduct = await productsRepository.GetAsync(id);
+
+            if (existingProduct == null)
+            {
+                return NotFound();
+            }
+            existingProduct.CountSold += increaseCountSold.Value;
+            await productsRepository.UpdateAsync(existingProduct);
+
+            await publishEndpoint.Publish(new CountSoldIncreased(existingProduct.Id, existingProduct.CountSold));
 
             return NoContent();
         }

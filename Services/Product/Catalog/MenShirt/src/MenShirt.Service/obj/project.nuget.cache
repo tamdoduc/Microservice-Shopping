@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bqkhucvDusrPU9gDUjNAUv+XBy/x8WO4n7X3vwmrvsdz+h56GgIdmH+nC4gvC3xy1dKVjYz/A1gUOeDmS/AweQ==",
+  "dgSpecHash": "Fw22NDmAOEN6ujkr19fDGvIaxTg2TMyeqPndauf7+tmCHziW8uDdl2vVI0P9KAL1L0GLWdZcaR2IfnEvLzdEoQ==",
   "success": true,
   "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
   "expectedPackageFiles": [

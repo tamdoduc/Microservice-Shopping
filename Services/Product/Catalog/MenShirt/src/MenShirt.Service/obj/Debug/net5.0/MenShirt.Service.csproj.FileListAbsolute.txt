@@ -61,3 +61,5 @@ F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Se
 F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Service\obj\Debug\net5.0\MenShirt.Service.pdb
 F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Service\obj\Debug\net5.0\MenShirt.Service.genruntimeconfig.cache
 F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Service\obj\Debug\net5.0\ref\MenShirt.Service.dll
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Service\bin\Debug\net5.0\MenShirt.Contracts.dll
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Service\bin\Debug\net5.0\MenShirt.Contracts.pdb

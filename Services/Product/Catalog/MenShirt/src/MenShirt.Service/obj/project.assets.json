@@ -791,6 +791,16 @@
         "runtime": {
           "lib/net5.0/ZstdSharp.dll": {}
         }
+      },
+      "MenShirt.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MenShirt.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MenShirt.Contracts.dll": {}
+        }
       }
     }
   },
@@ -1912,11 +1922,17 @@
         "zstdsharp.port.0.6.2.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "MenShirt.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MenShirt.Contracts/MenShirt.Contracts.csproj",
+      "msbuildProject": "../MenShirt.Contracts/MenShirt.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Base.Service >= 2.1.0",
+      "MenShirt.Contracts >= 1.0.0",
       "Product.Service >= 1.0.2",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -1948,7 +1964,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {
+              "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
