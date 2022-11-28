@@ -7,9 +7,11 @@
 ### Architecture : Microservice
 
 ## Command
-### New service : dotnet new webapi -n [:name].Service --framework net5.0
-### Add package : dotnet add package [:name] --version 
-### Create package : dotnet pack [to-source]
+### New service : dotnet new webapi -n Service.[:name] --framework net5.0
+
+### Add package : dotnet add package [:name] --version
+
+### Create package : dotnet pack -o ..\..\..\packages\
 ### Update New Version : dotnet pack -p:PackageVersion=1.0.2 -o ..\..\..\packages\
 ### Add Nuget : dotnet nuget add source [source] -n [:name]
 ### Remove Nuget: dotnet nuget remove source [:name]
