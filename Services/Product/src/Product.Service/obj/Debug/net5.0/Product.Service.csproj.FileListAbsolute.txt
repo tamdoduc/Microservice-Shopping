@@ -117,3 +117,5 @@ F:\Clone\Microservice-Shopping\Services\Product\src\product.service\obj\Debug\ne
 F:\Clone\Microservice-Shopping\Services\Product\src\product.service\obj\Debug\net5.0\refint\Product.Service.dll
 F:\Clone\Microservice-Shopping\Services\Product\src\product.service\obj\Debug\net5.0\Product.Service.genruntimeconfig.cache
 F:\Clone\Microservice-Shopping\Services\Product\src\product.service\obj\Debug\net5.0\ref\Product.Service.dll
+F:\Clone\Microservice-Shopping\Services\Product\src\Product.Service\bin\Debug\net5.0\Product.Contracts.dll
+F:\Clone\Microservice-Shopping\Services\Product\src\Product.Service\bin\Debug\net5.0\Product.Contracts.pdb

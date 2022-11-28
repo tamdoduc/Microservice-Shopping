@@ -759,6 +759,16 @@
         "runtime": {
           "lib/net5.0/ZstdSharp.dll": {}
         }
+      },
+      "Product.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Product.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Product.Contracts.dll": {}
+        }
       }
     }
   },
@@ -1864,11 +1874,17 @@
         "zstdsharp.port.0.6.2.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Product.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Product.Contracts/Product.Contracts.csproj",
+      "msbuildProject": "../Product.Contracts/Product.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Base.Service >= 2.1.0",
+      "Product.Contracts >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1878,11 +1894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
       "projectName": "Product.Service",
-      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+      "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
+      "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1899,7 +1915,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\Product.Contracts.csproj": {
+              "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\Product.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

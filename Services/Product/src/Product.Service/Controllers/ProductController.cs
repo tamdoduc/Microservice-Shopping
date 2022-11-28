@@ -72,11 +72,13 @@ namespace Product.Service.Controllers
                 Image = productDto.Image,
                 MinPrice = productDto.MinPrice,
                 MaxPrice = productDto.MaxPrice,
-                CountSold = productDto.CountSold,
-                CountStar = productDto.CountStar,
+                CountSold = 0,
+                CountStar = 5,
                 Discount = productDto.Discount
             };
             await productsRepository.CreateAsync(product);
+
+            await publishEndpoint.Publish(new ProductCreated(product.Id, product.IdAccount, product.NameProduct, product.Image, product.MinPrice, product.MaxPrice, product.Discount));
 
             return CreatedAtAction(nameof(GetAsyncById), new { id = product.Id }, product);
         }
@@ -100,6 +102,8 @@ namespace Product.Service.Controllers
             existingProduct.Discount = productDto.Discount;
             await productsRepository.UpdateAsync(existingProduct);
 
+            await publishEndpoint.Publish(new ProductUpdated(existingProduct.Id, existingProduct.IdAccount, existingProduct.NameProduct, existingProduct.Image, existingProduct.MinPrice, existingProduct.MaxPrice,existingProduct.CountSold,existingProduct.CountStar, existingProduct.Discount));
+
             return NoContent();
         }
         //DELETE /products/{id}
@@ -113,6 +117,23 @@ namespace Product.Service.Controllers
             }
 
             await productsRepository.RemoveAsync(product.Id);
+
+            return NoContent();
+        }
+         //POST /products/{id}
+        [HttpPost("increaseCountSold/{id}")]
+        public async Task<IActionResult> IncreaseCountSoldAsync(Guid id, IncreaseCountSold increaseCountSold)
+        {
+            var existingProduct = await productsRepository.GetAsync(id);
+
+            if (existingProduct == null)
+            {
+                return NotFound();
+            }
+            existingProduct.CountSold += increaseCountSold.Value;
+            await productsRepository.UpdateAsync(existingProduct);
+
+            await publishEndpoint.Publish(new CountSoldIncreased(existingProduct.Id, existingProduct.CountSold));
 
             return NoContent();
         }
