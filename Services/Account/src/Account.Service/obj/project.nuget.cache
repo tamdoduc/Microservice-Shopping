@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mntk2sP0aatLbpuyC52bqq8lLM6759uYLgBKguKNWFjE/5EnbQwT3Kqk6/2jXb7Tx979Z8ckeZFHXnWnSmhwaw==",
+  "dgSpecHash": "t5SnLO/0jFLvtHx7wFOrWmCCEmnrV53u3mmS+SPA9I1KrNhg7i60WZ5V3VUKGdWAuHeOpVAzgxhJKplfyk0v+g==",
   "success": true,
-  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\Service.Account.csproj",
+  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\account.service\\Service.Account.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Turtle\\.nuget\\packages\\base.service\\1.0.2\\base.service.1.0.2.nupkg.sha512",
     "C:\\Users\\Turtle\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

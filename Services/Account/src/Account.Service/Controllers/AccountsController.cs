@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Account.Service.Entities;
-using Account.Service;
 using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
@@ -8,8 +7,9 @@ using Account.Service.Dtos;
 using System.Linq;
 using MassTransit;
 using Account.Contracts;
+using Base.Service;
 
-namespace Base.Service.Controllers
+namespace Account.Service.Controllers
 {
     [ApiController]
     [Route("accounts")]

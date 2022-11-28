@@ -1,0 +1,12 @@
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\bin\Debug\net5.0\MenShirt.Contracts.deps.json
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\bin\Debug\net5.0\MenShirt.Contracts.dll
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\bin\Debug\net5.0\MenShirt.Contracts.pdb
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.csproj.AssemblyReference.cache
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.AssemblyInfoInputs.cache
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.AssemblyInfo.cs
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.csproj.CoreCompileInputs.cache
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.dll
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\refint\MenShirt.Contracts.dll
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\MenShirt.Contracts.pdb
+F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\obj\Debug\net5.0\ref\MenShirt.Contracts.dll
