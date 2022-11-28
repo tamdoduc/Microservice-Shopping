@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jOPA06cr9JM3UiZbUs5fDRAJ74+5UuQZXaDFLqB1uGQGQiSeOO7BghWr425OkrKGLUkuceRMhNgVGoSbCkQEZw==",
+  "dgSpecHash": "bqkhucvDusrPU9gDUjNAUv+XBy/x8WO4n7X3vwmrvsdz+h56GgIdmH+nC4gvC3xy1dKVjYz/A1gUOeDmS/AweQ==",
   "success": true,
   "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
   "expectedPackageFiles": [
@@ -52,16 +52,5 @@
     "C:\\Users\\Turtle\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\Turtle\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "MenShirt.Service depends on Base.Service (>= 2.0.1) but Base.Service 2.0.1 was not found. An approximate best match of Base.Service 2.1.0 was resolved.",
-      "libraryId": "Base.Service",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

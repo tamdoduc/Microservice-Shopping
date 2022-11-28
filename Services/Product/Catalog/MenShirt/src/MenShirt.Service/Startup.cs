@@ -1,18 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Base.Service.MassTransit;
 using Base.Service.MongoDB;
 using Base.Service.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Product.Catalog.MenShirt.Service.Entities;
 
@@ -38,7 +31,7 @@ namespace MenShirt.Service
 
             services
                 .AddMongo()
-                .AddMongoRespository<MenShirtDao>("products")
+                .AddMongoRespository<MenShirtDao>("menshirts")
                 .AddMassTransitWithRabbitMq();
 
 

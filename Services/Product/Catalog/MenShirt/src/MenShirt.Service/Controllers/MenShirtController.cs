@@ -22,7 +22,7 @@ namespace Product.Catalog.MenShirt.Service.Controllers
             this.productsRepository = productsRepository;
             this.publishEndpoint = publishEndpoint;
         }
-         //GET /products/byAccount/{idAccount}
+         //GET /product/catalog/menshirts/byAccount/{idAccount}
         [HttpGet("byAccount/{idAccount}")]
         public async Task<ActionResult<IEnumerable<MenShirtDto>>> GetAllAsyncByIdAccount(Guid idAccount)
         {
@@ -36,7 +36,7 @@ namespace Product.Catalog.MenShirt.Service.Controllers
 
             return Ok(products);
         }
-        //GET /products
+        //GET /product/catalog/menshirts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MenShirtDto>>> GetAllAsync()
         {
@@ -46,7 +46,7 @@ namespace Product.Catalog.MenShirt.Service.Controllers
 
             return Ok(products);
         }
-         //GET /products/{id}
+         //GET /product/catalog/menshirts/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<IEnumerable<MenShirtDto>>> GetAsyncById(Guid id)
         {
@@ -60,7 +60,7 @@ namespace Product.Catalog.MenShirt.Service.Controllers
 
             return Ok(products);
         }
-        //POST /products/
+        //POST /product/catalog/menshirts/
         [HttpPost]
         public async Task<ActionResult<MenShirtDto>> PostAsync(CreateMenShirtDto MenShirtDto)
         {
@@ -79,7 +79,7 @@ namespace Product.Catalog.MenShirt.Service.Controllers
 
             return CreatedAtAction(nameof(GetAsyncById), new { id = product.Id }, product);
         }
-         //PUT /products/{id}
+         //PUT /product/catalog/menshirts/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(Guid id, UpdateMenShirtDto MenShirtDto)
         {
@@ -101,7 +101,7 @@ namespace Product.Catalog.MenShirt.Service.Controllers
 
             return NoContent();
         }
-        //DELETE /products/{id}
+        //DELETE /product/catalog/menshirts/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
