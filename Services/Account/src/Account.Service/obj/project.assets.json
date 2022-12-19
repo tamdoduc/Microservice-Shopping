@@ -1894,30 +1894,30 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\Service.Account.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\Service.Account.csproj",
       "projectName": "Service.Account",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\Service.Account.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\Service.Account.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Users\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Users\\Turtle\\packages": {},
-        "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj": {
-              "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj"
+            "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj": {
+              "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj"
             }
           }
         }

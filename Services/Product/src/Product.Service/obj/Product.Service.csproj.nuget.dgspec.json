@@ -14,15 +14,15 @@
         "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Users\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\Turtle\\packages": {},
-          "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,15 +70,15 @@
         "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Users\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\Turtle\\packages": {},
-          "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +103,7 @@
           "dependencies": {
             "Base.Service": {
               "target": "Package",
-              "version": "[2.1.0, )"
+              "version": "[1.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

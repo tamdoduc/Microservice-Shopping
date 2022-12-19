@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FBMdEueHTF6zEBV4Rt7inOYHnZZxEpWv950qc7/pS9U9z6sTOWL74H/9weto/yAxSmekYWBWc4QN13VP34f4rw==",
+  "dgSpecHash": "stXAMUupL5DE62DT+Ssz4muHtTpaVWCcMSbtFpJjCnznLcVl1Q2sY8Fmjw6OWyCgPl79v99sfqkZoWZZVpdRlQ==",
   "success": true,
-  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
+  "projectFilePath": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
