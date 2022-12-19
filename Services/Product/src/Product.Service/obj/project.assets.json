@@ -1894,11 +1894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
       "projectName": "Product.Service",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\Product.Service.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1907,8 +1907,8 @@
         "net5.0"
       ],
       "sources": {
-        "C:\\": {},
         "C:\\Users\\": {},
+        "C:\\Users\\Turtle\\packages": {},
         "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1916,8 +1916,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\Product.Contracts.csproj": {
-              "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\Product.Contracts.csproj"
+            "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\Product.Contracts.csproj": {
+              "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\src\\Product.Contracts\\Product.Contracts.csproj"
             }
           }
         }

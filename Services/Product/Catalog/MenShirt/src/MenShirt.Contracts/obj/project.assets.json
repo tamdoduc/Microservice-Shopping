@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
       "projectName": "MenShirt.Contracts",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -27,6 +27,7 @@
       ],
       "sources": {
         "C:\\Users\\": {},
+        "C:\\Users\\Turtle\\packages": {},
         "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },

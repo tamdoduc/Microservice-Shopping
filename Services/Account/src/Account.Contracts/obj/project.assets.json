@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
       "projectName": "Account.Contracts",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\Account.Contracts.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,6 +26,8 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Users\\": {},
+        "C:\\Users\\Turtle\\packages": {},
         "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },

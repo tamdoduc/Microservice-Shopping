@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Base.Service/1.0.2": {
+      "Base.Service/1.0.3": {
         "type": "package",
         "dependencies": {
           "MassTransit.AspNetCore": "7.3.1",
@@ -773,13 +773,13 @@
     }
   },
   "libraries": {
-    "Base.Service/1.0.2": {
-      "sha512": "3Zbm0eLBALaDtyKzBNpYuC+LHoHXVzVQU7fpHQmh8tnSkCpd665RiMs1SYk7Pe/448RXmOlOli6VSfgfMq3v/Q==",
+    "Base.Service/1.0.3": {
+      "sha512": "YKTya0es04HzHfGXtkNnlJftFv4i0TnpekbaPPz+DcTQLE/uzqXDiRoxFyHwO23yBQM/lBOoM58/x7DLQFVzgA==",
       "type": "package",
-      "path": "base.service/1.0.2",
+      "path": "base.service/1.0.3",
       "files": [
         ".nupkg.metadata",
-        "base.service.1.0.2.nupkg.sha512",
+        "base.service.1.0.3.nupkg.sha512",
         "base.service.nuspec",
         "lib/net5.0/Base.Service.dll"
       ]
@@ -1884,7 +1884,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Account.Contracts >= 1.0.0",
-      "Base.Service >= 1.0.2",
+      "Base.Service >= 1.0.3",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1907,6 +1907,8 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Users\\": {},
+        "C:\\Users\\Turtle\\packages": {},
         "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1932,7 +1934,7 @@
         "dependencies": {
           "Base.Service": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[1.0.3, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

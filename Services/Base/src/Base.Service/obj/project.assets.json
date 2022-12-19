@@ -1655,13 +1655,13 @@
     "C:\\Users\\Turtle\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "2.1.0",
+    "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Base\\src\\Base.Service\\Base.Service.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Base\\src\\Base.Service\\Base.Service.csproj",
       "projectName": "Base.Service",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Base\\src\\Base.Service\\Base.Service.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Base\\src\\Base.Service\\Base.Service.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Base\\src\\Base.Service\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Base\\src\\Base.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1670,6 +1670,8 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Users\\": {},
+        "C:\\Users\\Turtle\\packages": {},
         "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },

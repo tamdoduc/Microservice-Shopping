@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "t5SnLO/0jFLvtHx7wFOrWmCCEmnrV53u3mmS+SPA9I1KrNhg7i60WZ5V3VUKGdWAuHeOpVAzgxhJKplfyk0v+g==",
+  "dgSpecHash": "5y7jtbqUBoW9LOM/7p4ke/g6p1zFG8p6DADG6nJtbxR001Ym+ZUQ778W/xpkvzolE6NKpZIeGVw7zOOdx7sN9w==",
   "success": true,
-  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\account.service\\Service.Account.csproj",
+  "projectFilePath": "F:\\Clone\\Microservice-Shopping\\Services\\Account\\src\\Account.Service\\Service.Account.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Turtle\\.nuget\\packages\\base.service\\1.0.2\\base.service.1.0.2.nupkg.sha512",
+    "C:\\Users\\Turtle\\.nuget\\packages\\base.service\\1.0.3\\base.service.1.0.3.nupkg.sha512",
     "C:\\Users\\Turtle\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Turtle\\.nuget\\packages\\masstransit\\8.0.7\\masstransit.8.0.7.nupkg.sha512",
     "C:\\Users\\Turtle\\.nuget\\packages\\masstransit.abstractions\\8.0.7\\masstransit.abstractions.8.0.7.nupkg.sha512",

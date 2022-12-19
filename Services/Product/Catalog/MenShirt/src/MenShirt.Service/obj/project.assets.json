@@ -1943,11 +1943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
+      "projectUniqueName": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
       "projectName": "MenShirt.Service",
-      "projectPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
+      "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\MenShirt.Service.csproj",
       "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-      "outputPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Service\\obj\\",
+      "outputPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1957,6 +1957,7 @@
       ],
       "sources": {
         "C:\\Users\\": {},
+        "C:\\Users\\Turtle\\packages": {},
         "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1964,8 +1965,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {
-              "projectPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj"
+            "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {
+              "projectPath": "f:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj"
             }
           }
         }
