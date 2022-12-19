@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {}
+    "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {}
   },
   "projects": {
-    "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {
+    "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
+        "projectUniqueName": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
         "projectName": "MenShirt.Contracts",
-        "projectPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
+        "projectPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\MenShirt.Contracts.csproj",
         "packagesPath": "C:\\Users\\Turtle\\.nuget\\packages\\",
-        "outputPath": "F:\\Clone\\Microservice-Shopping\\Services\\Product\\Catalog\\MenShirt\\src\\MenShirt.Contracts\\obj\\",
+        "outputPath": "F:\\Clone\\Microservice-Shopping\\services\\product\\catalog\\menshirt\\src\\MenShirt.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Turtle\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,7 +20,6 @@
           "net5.0"
         ],
         "sources": {
-          "C:\\": {},
           "C:\\Users\\": {},
           "F:\\Clone\\Microservice-Shopping\\Services\\packages": {},
           "https://api.nuget.org/v3/index.json": {}

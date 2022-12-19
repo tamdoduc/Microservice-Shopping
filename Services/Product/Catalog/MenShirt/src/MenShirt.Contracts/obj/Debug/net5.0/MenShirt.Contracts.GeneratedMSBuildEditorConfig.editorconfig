@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MenShirt.Contracts
-build_property.ProjectDir = F:\Clone\Microservice-Shopping\Services\Product\Catalog\MenShirt\src\MenShirt.Contracts\
+build_property.ProjectDir = F:\Clone\Microservice-Shopping\services\product\catalog\menshirt\src\MenShirt.Contracts\
