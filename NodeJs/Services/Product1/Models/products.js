@@ -6,12 +6,8 @@ const ProductsSchema = new schema({
     type: String,
     require: true,
   },
-  accountId: {
-    type: schema.Types.ObjectId,
-    ref: "accounts",
-  },
   imageURL: {
-    type: Number,
+    type: String,
     require: true,
   },
   minPrice: {

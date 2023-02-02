@@ -2,6 +2,8 @@ const express = require("express");
 const multer = require("multer");
 const router = express.Router();
 
+const amqp = require("amqplib");
+
 const Product = require("../Models/products");
 
 const uploadMultipartForm = multer().none();
@@ -13,43 +15,28 @@ router.get("/", (req, res) => res.send("PRODUCT ROUTE"));
 // @access Public
 router.post("/create", async (req, res) => {
   try {
-    uploadMultipartForm(req, res, function (err) {
-      const {
-        accountId,
-        nameProduct,
-        imageURL,
-        minPrice,
-        maxPrice,
-        countSold,
-        countStar,
-        discount,
-      } = req.body;
+    const { nameProduct, imageURL, minPrice, maxPrice, discount } = req.body;
 
-      if (!accountId || !nameProduct || !imageURL || !minPrice || !maxPrice)
-        return res
-          .status(400)
-          .json({ success: false, message: "Missing information" });
+    if (!nameProduct || !imageURL || !minPrice || !maxPrice)
+      return res
+        .status(400)
+        .json({ success: false, message: "Missing information" });
 
-      const discountValue = Number(salePrice) - Number(price);
-      const newProduct = new Product({
-        accountId,
-        nameProduct,
-        imageURL,
-        minPrice,
-        maxPrice,
-        countSold,
-        countStar,
-        discount,
-      });
+    const newProduct = new Product({
+      nameProduct,
+      imageURL,
+      minPrice,
+      maxPrice,
+      discount,
+    });
 
-      //All good
+    //All good
 
-      newProduct.save();
-      res.json({
-        success: true,
-        message: "Product created successfully",
-        productID: newProduct._id,
-      });
+    newProduct.save();
+    res.json({
+      success: true,
+      message: "Product created successfully",
+      productID: newProduct._id,
     });
   } catch (error) {
     console.log(error);
@@ -76,31 +63,11 @@ router.get("/all", async (req, res) => {
   }
 });
 
-// @route GET api/products/byAccountId
-// @desc Get Product by accountId
-// @access Public
-router.get("/byAccountId", async (req, res) => {
-  const accountId = req.query.accountId;
-  try {
-    console.log(accountId);
-    const products = await Product.find({
-      accountId,
-    });
-    res.json({ success: true, products });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({
-      success: false,
-      message: " Internal server error",
-    });
-  }
-});
-
 // @route GET api/products/byProductId
 // @desc Get Product by productId
 // @access Public
 router.get("/byProductId", async (req, res) => {
-  const productId = req.query.productId;
+  const productId = req.body.productId;
   try {
     const product = await Product.findOne({
       _id: productId,
@@ -119,29 +86,15 @@ router.get("/byProductId", async (req, res) => {
 // @desc delete 1 product
 // @access Public
 router.delete("/byProductId", async (req, res) => {
-  const productId = req.query.productId;
+  const productId = req.body.productId;
   console.log("productId: ", productId);
   try {
-    Product.findByIdAndDelete({ _id: productId });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({
-      success: false,
-      message: " Internal server error",
-    });
-  }
-});
-
-// @route Delete api/products/byAccountId
-// @desc delete all product by accountId
-// @access Public
-router.delete("/byAccountId", async (req, res) => {
-  const { accountId } = req.body;
-  try {
-    await Product.deleteMany({ accountId: accountId });
-    res.json({
-      success: true,
-      message: "Deleted Products accountId: " + accountId,
+    Product.findByIdAndDelete(productId, function (error, product) {
+      if (error) res.json({ success: false, error });
+      if (product) res.json({ success: true, message: "Deleted", product });
+      else {
+        res.json({ success: false, message: "Not found" });
+      }
     });
   } catch (error) {
     console.log(error);
@@ -157,9 +110,20 @@ router.delete("/byAccountId", async (req, res) => {
 // @access Public
 router.put("/update", async (req, res) => {
   try {
-    uploadMultipartForm(req, res, function (err) {
-      const {
-        accountId,
+    const {
+      productId,
+      nameProduct,
+      imageURL,
+      minPrice,
+      maxPrice,
+      countSold,
+      countStar,
+      discount,
+    } = req.body;
+    Product.findOneAndUpdate(
+      { _id: productId },
+      {
+        productId,
         nameProduct,
         imageURL,
         minPrice,
@@ -167,38 +131,24 @@ router.put("/update", async (req, res) => {
         countSold,
         countStar,
         discount,
-      } = req.body;
-      Product.findOneAndUpdate(
-        { _id: productId },
-        {
-          accountId,
-          nameProduct,
-          imageURL,
-          minPrice,
-          maxPrice,
-          countSold,
-          countStar,
-          discount,
-        },
-        { new: true },
-        function (error, product) {
-          console.log(product);
-          if (!productt) {
-            res.status(400).json({
-              success: false,
-              message: "product not found",
-            });
-          } else {
-            res.status(200).json({
-              success: true,
-              message: " Updated product",
-              product,
-            });
-          }
+      },
+      { new: true },
+      function (error, product) {
+        console.log(product);
+        if (!product) {
+          res.status(400).json({
+            success: false,
+            message: "product not found",
+          });
+        } else {
+          res.status(200).json({
+            success: true,
+            message: " Updated product",
+            product,
+          });
         }
-      );
-      // All Good
-    });
+      }
+    );
   } catch (error) {
     console.log(error);
     res.status(500).json({
@@ -213,9 +163,7 @@ router.put("/update", async (req, res) => {
 // @access Public
 router.put("/upSoldCount", async (req, res) => {
   try {
-    const { productId, count } = req.body;
-    const oldProduct = await Product.findOne({ _id: productId });
-    const newCount = oldProduct.countSold + count;
+    const { productId, newCount } = req.body;
     Product.findOneAndUpdate(
       { _id: productId },
       {
@@ -247,3 +195,5 @@ router.put("/upSoldCount", async (req, res) => {
     });
   }
 });
+
+module.exports = router;
