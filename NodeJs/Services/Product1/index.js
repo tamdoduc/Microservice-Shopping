@@ -26,12 +26,10 @@ async function connect() {
     const result = await channel.assertQueue("jobs");
     channel.sendToQueue("jobs", Buffer.from("Hi it works"));
     console.log("jobs sent successfully");
-    console.log(result);
   } catch (ex) {
     console.error(ex);
   }
 }
-
 connectDB();
 
 const app = express();

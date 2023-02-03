@@ -17,16 +17,19 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+
 connect();
 async function connect() {
   try {
     const connection = amqp.connect("amqp://localhost:5672");
     const channel = await (await connection).createChannel();
 
+    let queueName = "jobs";
     const result = await channel.assertQueue("jobs");
-    channel.sendToQueue("jobs", Buffer.from("Hi it works"));
-    console.log("jobs sent successfully");
-    console.log(result);
+    await channel.consume(queueName, (msg) => {
+      console.log(`Received: ${msg.content.toString()}`);
+      channel.ack(msg);
+    });
   } catch (ex) {
     console.error(ex);
   }
