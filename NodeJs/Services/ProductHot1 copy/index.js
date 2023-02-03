@@ -5,6 +5,7 @@ const cors = require("cors");
 const amqp = require("amqplib");
 
 const productRouter = require("./routes/product");
+const productHotRouter = require("./routes/productHot");
 
 const connectDB = async () => {
   try {
@@ -46,8 +47,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/products", productRouter);
-const PORT = 5005;
+app.use("/api/productHots", productHotRouter);
+const PORT = 5010;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-app.get("/", (req, res) => res.send("PRODUCT Hot"));
+app.get("/", (req, res) => res.send("2 Service"));
 module.exports = app;
