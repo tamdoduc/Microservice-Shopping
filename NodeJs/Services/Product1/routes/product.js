@@ -33,6 +33,20 @@ router.post("/create", async (req, res) => {
     //All good
 
     newProduct.save();
+    connect();
+    async function connect() {
+      try {
+        const connection = amqp.connect("amqp://localhost:5672");
+        const channel = await (await connection).createChannel();
+
+        let message = "created" + newProduct.toString();
+        const result = await channel.assertQueue("productChanged");
+        channel.sendToQueue("jobs", Buffer.from(message));
+        console.log("jobs sent successfully");
+      } catch (ex) {
+        console.error(ex);
+      }
+    }
     res.json({
       success: true,
       message: "Product created successfully",
@@ -91,8 +105,23 @@ router.delete("/byProductId", async (req, res) => {
   try {
     Product.findByIdAndDelete(productId, function (error, product) {
       if (error) res.json({ success: false, error });
-      if (product) res.json({ success: true, message: "Deleted", product });
-      else {
+      if (product) {
+        connect();
+        async function connect() {
+          try {
+            const connection = amqp.connect("amqp://localhost:5672");
+            const channel = await (await connection).createChannel();
+
+            let message = "deleted" + product.toString();
+            const result = await channel.assertQueue("productChanged");
+            channel.sendToQueue("jobs", Buffer.from(message));
+            console.log("jobs sent successfully");
+          } catch (ex) {
+            console.error(ex);
+          }
+        }
+        res.json({ success: true, message: "Deleted", product });
+      } else {
         res.json({ success: false, message: "Not found" });
       }
     });
@@ -178,6 +207,20 @@ router.put("/upSoldCount", async (req, res) => {
             message: "product not found",
           });
         } else {
+          connect();
+          async function connect() {
+            try {
+              const connection = amqp.connect("amqp://localhost:5672");
+              const channel = await (await connection).createChannel();
+
+              let message = "update" + product.toString();
+              const result = await channel.assertQueue("productChanged");
+              channel.sendToQueue("jobs", Buffer.from(message));
+              console.log("jobs sent successfully");
+            } catch (ex) {
+              console.error(ex);
+            }
+          }
           res.status(200).json({
             success: true,
             message: " Updated product",

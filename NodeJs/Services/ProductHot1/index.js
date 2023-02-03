@@ -28,6 +28,7 @@ async function connect() {
     const result = await channel.assertQueue("jobs");
     await channel.consume(queueName, (msg) => {
       console.log(`Received: ${msg.content.toString()}`);
+      console.log("Sorting...........................................");
       channel.ack(msg);
     });
   } catch (ex) {
@@ -48,5 +49,5 @@ app.use("/api/products", productRouter);
 const PORT = 5005;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-
+app.get("/", (req, res) => res.send("PRODUCT ROUTE"));
 module.exports = app;

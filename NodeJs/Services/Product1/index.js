@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const amqp = require("amqplib");
 
 const productRouter = require("./routes/product");
 
@@ -17,19 +16,6 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
-connect();
-async function connect() {
-  try {
-    const connection = amqp.connect("amqp://localhost:5672");
-    const channel = await (await connection).createChannel();
-
-    const result = await channel.assertQueue("jobs");
-    channel.sendToQueue("jobs", Buffer.from("Hi it works"));
-    console.log("jobs sent successfully");
-  } catch (ex) {
-    console.error(ex);
-  }
-}
 connectDB();
 
 const app = express();
@@ -44,4 +30,5 @@ const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
+app.get("/", (req, res) => res.send("PRODUCT ROUTE"));
 module.exports = app;
